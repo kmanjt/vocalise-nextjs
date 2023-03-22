@@ -9,7 +9,7 @@ To get started with Vocalise, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/kmanjt/vocalise-frontend.git
+git clone https://github.com/kmanjt/vocalise-nextjs.git
 ```
 
 2. Install dependencies:
