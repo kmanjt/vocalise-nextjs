@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Features from "../components/Features";
 import Contact from "../components/Contact";
 import Team from "../components/Team";
+import Pricing from "../components/Pricing";
 
 export default function Home() {
   return (
@@ -31,6 +32,10 @@ export default function Home() {
 
       <section id="mission" className="snap-center">
         <Mission />
+      </section>
+
+      <section id="pricing" className="snap-center">
+        <Pricing />
       </section>
 
       <section id="team" className="snap-center">

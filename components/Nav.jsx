@@ -9,8 +9,9 @@ import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 
 const navigation = [
-  { name: "Features", href: "#features", current: false },
+  { name: "Our Workshops", href: "#features", current: false },
   { name: "Our Mission", href: "#mission", current: false },
+  { name: "Pricing", href: "#pricing", current: false },
   { name: "Our Team", href: "#team", current: false },
   { name: "Contact", href: "#contact", current: false },
 ];
@@ -79,7 +80,16 @@ export default function Nav() {
                     ))}
                   </div>
                 </div>
+                
+                
               </div>
+              <div>
+                  <button className="bg-vRed text-right font-bold text-white rounded-md p-2 m-auto">
+                    <Link href="#contact">
+                      Book a Workshop
+                      </Link>
+                  </button>
+                </div>
             </div>
           </div>
 
