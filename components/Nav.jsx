@@ -24,17 +24,6 @@ export default function Nav() {
   const [nav, setNav] = useState(false);
   const [colour, setColour] = useState("#5A87C5 ");
 
-  /*useEffect(() => {
-    const changeColour = () => {
-      if (window.scrollY >= 520) {
-        setColour("#174484");
-      } else {
-        setColour("transparent");
-      }
-    };
-    window.addEventListener("scroll", changeColour);
-  }, []);*/
-
   return (
     <Disclosure
       as="nav"
@@ -50,7 +39,7 @@ export default function Nav() {
             >
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:dark-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:darkBlue focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -59,7 +48,7 @@ export default function Nav() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="bg-transparent pt-3 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className=" pt-3 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="#hero">
                     <Image
@@ -91,56 +80,6 @@ export default function Nav() {
                   </div>
                 </div>
               </div>
-
-              {showModal ? (
-                <>
-                  <div className=" flex overflow-x-hidden overflow-y-auto fixed inset-0 z-60 outline-none focus:outline-none">
-                    <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                      <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-
-                        <button
-                          className="p-1 ml-auto border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                          onClick={() => setShowModal(false)}
-                        >
-                          <span className="text-black h-6 w-6 text-2xl block ">
-                            ×
-                          </span>
-                        </button>
-
-                        <div className="p-5 text-center grid grid-cols-4 md:grid-flow-row">
-
-                          <div className="col-span-4">
-
-                            <p className="text-center">Download soon!</p>
-
-                            <br></br>
-                          </div>
-                          <div className="col-span-2 ...">
-                            <button
-                              type="button"
-                              className="bg-blue-900 text-white rounded-full px-12 py-2 mr-4 hover:scale-105 shadow-xl"
-                            >
-                              <AiFillApple className="inline-block mr-2 lg:text-3xl text-2xl" />
-
-                            </button>
-                          </div>
-                          <div className="col-span-2 ...">
-                            <button
-                              type="button"
-                              className="bg-blue-900 text-white rounded-full px-12 py-2 mr-4 hover:scale-105 shadow-xl"
-                            >
-                              <FaGooglePlay className="inline-block mr-2 lg:text-2xl" />
-
-                            </button>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ) : null}
-
             </div>
           </div>
 
@@ -153,8 +92,8 @@ export default function Nav() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "dark-blue text-white"
-                      : "text-zinc-800 hover:dark-blue hover:text-white",
+                      ? "darkBlue text-white"
+                      : "text-zinc-800 hover:dark-blue hover:bg-darkBlue hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

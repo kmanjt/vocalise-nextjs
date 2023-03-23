@@ -12,14 +12,9 @@ export default function Mission() {
           <Heading title="Our Mission" />
           <br></br>
           <p className="text-md md:text-xl tracking-tight pl-4">
-            Our mission at Parking Protect is to empower people with
-            disabilities by providing an AI powered, user-friendly app that
-            allows for easy reporting of accessible parking misuse and promotes
-            accessibility for all.
-            <br />
-            <br /> We strive to foster a more inclusive community by holding
-            accountable those who abuse accessible parking and highlighting the
-            importance of accessibility for those who need it.
+          Vocalise aims to tackle the fear of public speaking and reduce the anxiety associated with it. 
+Combating the lack of student awareness about the issue.  
+Help build confidence among the students.
           </p>
         </div>
         <motion.div
@@ -37,7 +32,7 @@ export default function Mission() {
           }}
           className="align-top text-center m-auto p-4"
         >
-          <Image src={people} alt="people" className="w-50 h-50" />
+          <Image src={people} alt="people" className="w-40 h-40" />
         </motion.div>
       </div>
     </div>

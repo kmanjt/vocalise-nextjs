@@ -11,8 +11,8 @@ const features = [
     icon: FaInstagram,
   },
   {
-    name: "",
-    link: "mailto:info@parking-protect.com",
+    name: "vocalise.ie@gmail.com",
+    link: "mailto:vocalise.ie@gmail.com",
     icon: TfiEmail,
   },
   {
@@ -54,7 +54,7 @@ export default function Contact() {
                 >
                   <dt>
                     <a href={feature.link} target="blank">
-                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-md dark-blue hover:bg-blue-600/60 text-white text-center">
+                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-darkBlue hover:bg-blue-600/60 text-white text-center">
                         <feature.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <p className="ml-16 text-lg font-medium leading-10 text-gray-900">
