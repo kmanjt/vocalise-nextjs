@@ -6,12 +6,12 @@ import Heading from "./Heading";
 
 const features = [
   {
-    name: "@parkingprotect",
+    name: "@vocalise.ie",
     link: "https://www.instagram.com/vocalise/",
     icon: FaInstagram,
   },
   {
-    name: "info@parking-protect.com",
+    name: "",
     link: "mailto:info@parking-protect.com",
     icon: TfiEmail,
   },

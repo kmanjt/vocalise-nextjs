@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/parking.png";
+import logo from "../public/vocalise.png";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 
@@ -38,8 +38,7 @@ export default function Nav() {
   return (
     <Disclosure
       as="nav"
-      style={{ backgroundColor: `${colour}` }}
-      className="bg-transparent fixed left-0 w-full z-10 top-0 shadow-sm ..."
+      className="bg-white fixed left-0 w-full z-10 top-0 shadow-sm ..."
     >
       {({ open }) => (
         <>
@@ -67,7 +66,7 @@ export default function Nav() {
                       src={logo}
                       width={75}
                       height={75}
-                      className="block h-8 w-auto "
+                      className="block h-12 w-auto "
                       alt="Logo"
                     />
                   </Link>
@@ -92,17 +91,7 @@ export default function Nav() {
                   </div>
                 </div>
               </div>
-              {/*Join button*/}
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-                <button
-                  type="button"
-                  onClick={() => setShowModal(true)}
-                  className="rounded-md dark-blue p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  <p className="font-mono ...">Download</p>
-                </button>
-              </div>
               {showModal ? (
                 <>
                   <div className=" flex overflow-x-hidden overflow-y-auto fixed inset-0 z-60 outline-none focus:outline-none">

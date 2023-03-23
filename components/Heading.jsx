@@ -17,7 +17,7 @@ export default function Heading(title) {
           }}
           viewport={{ once: true }}
         >
-          <h1 className="xl:text-6xl text-2xl md:text-3xl text-white font-bold">
+          <h1 className="xl:text-6xl text-2xl md:text-3xl text-vRed font-bold">
             {title.title}
           </h1>
         </motion.div>

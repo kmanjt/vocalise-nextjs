@@ -22,7 +22,7 @@ export default function Footer() {
           <a target={"_blank"} href="https://www.enactusdcu.com/">
             <Image
               src={logo}
-              alt="Parking Protect Logo"
+              alt="Enactus Logo"
               className="w-32 rounded-sm  mx-auto mb-8"
             />
           </a>

@@ -1,5 +1,5 @@
 import React from "react";
-import ppapp from "../public/ppapp.png";
+import ppapp from "../public/vocalise.png";
 import Image from "next/image";
 import Heading from "./Heading";
 import { AiFillApple } from "react-icons/ai";
@@ -12,39 +12,24 @@ const Hero = () => {
       <div className="absolute m-auto items-center justify-center xl:pt-24">
         <div className="grid md:grid-cols-2">
           <div className="text-center md:text-left p-5 mx-auto lg:pl-16 max-sm:mb-20 pt-12">
-            <Heading title="Protecting Peoples Places" />
+            <Heading title="Find your voice with Vocalise" />
             <br></br>
-            <p className="text-2xl text-white py-6 tracking-tight">
+            <p className="text-2xl text-darkBlue py-6 tracking-tight">
               Learn more about our mission{" "}
-              <span className="underline decoration-darkBlue italic tracking-tightest">
+              <span className="underline decoration-vRed italic tracking-tightest">
                 today
               </span>
               !{" "}
             </p>
             <br></br>
-            <div className="flex justify-center md:justify-start">
-              <button
-                className="bg-blue-900 text-white rounded-full px-12 py-2 mr-4 hover:scale-105 shadow-xl"
-                onClick={() => alert("Coming soon!")}
-              >
-                <AiFillApple className="inline-block mr-2 lg:text-3xl text-2xl" />
-                App Store
-              </button>
-              <button
-                className="bg-blue-900 text-white rounded-full px-12 py-2  hover:scale-105 shadow-xl"
-                onClick={() => alert("Coming soon!")}
-              >
-                <FaGooglePlay className="inline-block mr-2 lg:text-2xl" />
-                Play Store
-              </button>
-            </div>
+            
           </div>
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 1 }}
             viewport={{ once: true }}
-            className="mx-auto overflow-hidden w-40 md:w-96"
+            className="mx-auto overflow-hidden w-40 rounded-full md:w-96"
           >
             <Image src={ppapp} alt="app screenshot" />
           </motion.div>

@@ -1,3 +1,4 @@
+/*
 import Max from "../public/team/Max.png";
 import Kevin from "../public/team/Kevin.png";
 import Diarmuid from "../public/team/Diarmuid.png";
@@ -5,8 +6,10 @@ import Niamh from "../public/team/Niamh.png";
 import Sadhana from "../public/team/Sadhana.png";
 import Sarah from "../public/team/Sarah.png";
 import Arath from "../public/team/Arath.png";
+*/
 
 export const TeamData = [
+  /*
   {
     image: Diarmuid,
     name: "Diarmuid Brady",
@@ -50,4 +53,5 @@ export const TeamData = [
     url: "https://www.linkedin.com/in/kevin-james-tomescu/",
     role: "Founder",
   },
+  */
 ];

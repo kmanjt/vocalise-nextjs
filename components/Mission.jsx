@@ -1,5 +1,5 @@
 import React from "react";
-import people from "../public/people.png";
+import people from "../public/vocalise.png";
 import Image from "next/image";
 import Heading from "./Heading";
 import { motion } from "framer-motion";
