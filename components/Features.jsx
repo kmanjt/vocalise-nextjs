@@ -1,22 +1,35 @@
 import React from "react";
-import { RiNumber1 } from "react-icons/ri";
-import { RiNumber2 } from "react-icons/ri";
-import { RiNumber3 } from "react-icons/ri";
+// import { RiNumber1 } from "react-icons/ri";
+// import { RiNumber2 } from "react-icons/ri";
+// import { RiNumber3 } from "react-icons/ri";
+import Image from "next/image";
+import image_1 from "../public/Image_1.jpg";
+import image_2 from "../public/Image_2.jpg";
+import image_3 from "../public/Image_3.jpg";
 import Heading from "./Heading";
 import { motion } from "framer-motion";
 
 const feature = [
   {
-    description: "Body Language",
-    icon: RiNumber1,
+    // Body Language
+    title: "Cummuncation Essentials",
+    description: "Focuses on mastering body language to enhance communication skills. Learn to interpret and convey nonverbal cues effectively,  fostering better connections with others.",
+    image: image_1,
+    // icon: RiNumber1,
   },
   {
-    description: "Vocalisation",
-    icon: RiNumber2,
+    // Vocalisation
+    title: "Development & Delivery",
+    description: "Teaches vocalization techniques and stage presence for confident, engaging public speaking. Practice voice exercises, manage stage fright, and effectively utilize body language.",
+    image: image_2,
+    // icon: RiNumber2,
   },
   {
-    description: "Pitch Perfect",
-    icon: RiNumber3,
+    // Pitch Perfect
+    title: "Pitch Perfect",
+    description: "Learning effective techniques for structuring, designing, and delivering engaging talks that captivate audiences",
+    image: image_3,
+    // icon: RiNumber3,
   },
 ];
 
@@ -25,8 +38,10 @@ export default function Features() {
     <div className="flex flex-shrink flex-col relative space-y-16 overflow-hidden h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
       <div className="absolute top-[20%]">
         <Heading title="Our Workshops" />
-      </div>
       <br></br>
+      <br></br>
+      <br></br>
+      </div>
       <div className="grid md:grid-cols-3 grid-cols-1 p-2 absolute">
         {feature.map((feature, index) => {
           return (
@@ -42,14 +57,12 @@ export default function Features() {
               <div
                 key={index}
                 className="rounded-lg bg-white text-center p-4 w-full h-full  shadow-lg"
-                
               >
-                <feature.icon
-                  className="h-10 text-white  bg-darkBlue text-bold w-10 p-2 mb-6 mx-auto rounded-full max-sm:w-6 max-sm:h-6"
-                  
-                />
 
-                <p className="font-medium text-black text-2xl max-sm:text-xs">
+                {/* <Image src={feature.image} alt="image_unavailable" width={250} height={150} className="w-full h-auto"/> */}
+                <h6 className="font-medium text-black text-2xl max-sm:text-xs">{feature.title}</h6>
+                <br></br>
+                <p className="text-center">
                   {feature.description}
                 </p>
               </div>
