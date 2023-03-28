@@ -7,6 +7,8 @@ import Features from "../components/Features";
 import Contact from "../components/Contact";
 import Team from "../components/Team";
 import Pricing from "../components/Pricing";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Home() {
   return (

@@ -1,35 +1,52 @@
 import React from "react";
 import Heading from "./Heading";
-
 import { motion } from "framer-motion";
 
 const Pricing = () => {
-    return (
-        <div className="flex flex-col relative space-y-16 overflow-hidden h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-          <div className="text-center  p-5">
-            <Heading title="Pricing" />
-            <br></br>
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
-                <div className="bg-white rounded-md shadow-md p-6">
-                    <h1 className="text-2xl font-bold text-center pb-4">Essential</h1>
-                    <p className="bg-vRed text-white p-1 rounded-md w-1/5 m-auto mb-4">€150</p>
-                    <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                <div className="bg-white rounded-md shadow-md p-6">
-                    <h1 className="text-2xl font-bold text-center pb-4">Enhanced</h1>
-                    <p className="bg-vRed text-white p-1 rounded-md w-1/5 m-auto mb-4">€250</p>
-                    <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-
-
+  return (
+    <div className="flex flex-col relative space-y-16 overflow-hidden h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+      <div className="text-center p-5 w-full">
+        <Heading title="Pricing" />
+        <br></br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card text-center shadow">
+              <div class="card-header"><h8 className="font-medium text-black text-2xl max-sm:text-xs">€400</h8></div>
+                <div class="card-body">
+                  <h5 class="card-title">Communicate with Confidence</h5>
+                  <p class="card-text">
+                  This package only focuses on improving vocal delivery and body language skills to confidently express themselves and communicate more effectively.
+                  </p>
+                  <a href="#contact" className="bg-vRed text-right font-bold text-white rounded-md p-2 m-auto" class="btn btn-primary">
+                    Book Now
+                  </a>
+                </div>
+                <div class="card-footer text-muted">Price Reduced for a Limited Time</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card text-center shadow">
+              <div class="card-header"><h8 className="font-medium text-black text-2xl max-sm:text-xs">€600</h8></div>
+                <div class="card-body">
+                  <h5 class="card-title">Speak with Impact</h5>
+                  <p class="card-text">
+                  This package includes vocal delivery, body language, and <u>speech techniques</u> to help become leaders and future change makers and connect thier ideas with others.
+                  </p>
+                  <a href="#contact" className="bg-vRed text-right font-bold text-white rounded-md p-2 m-auto" class="btn btn-primary">
+                    Book Now
+                  </a>
+                </div>
+                <div class="card-footer text-muted">Price Reduced for a Limited Time</div>
+              </div>
+            </div>
           </div>
-          
         </div>
       </div>
-        
-        );
-
-}
-
+    </div>
+  );
+};
 
 export default Pricing;
+
+
