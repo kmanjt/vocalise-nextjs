@@ -46,13 +46,21 @@ export default function Footer() {
             >
               Niamh Gowran
             </a>
-            <span className="font-bold"> & </span>{" "}
+            <span className="font-bold">, </span>{" "}
             <a
               href="https://www.linkedin.com/in/kevin-james-tomescu/"
               target={"_blank"}
               className="hover:text-red-500"
             >
               Kevin Tomescu
+            </a>
+            <span className="font-bold"> & </span>{" "}
+            <a
+              href="https://www.linkedin.com/in/kevin-james-tomescu/"
+              target={"_blank"}
+              className="hover:text-red-500"
+            >
+              Teniola Malomo
             </a>
           </p>
         </div>

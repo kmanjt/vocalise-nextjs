@@ -37,7 +37,7 @@ export default function Mission() {
         >
           {/* <Image src={people} alt="people" className="w-40 h-40" /> */}
           {/* Note that the image below isn't that resposive */}
-          <Image src={Podium_pic} alt="people" className="w-75 h-75" />
+          <Image src={Podium_pic} alt="people" className="w-5/6 h-5/6 rounded-xl shadow-md" />
         </motion.div>
       </div>
     </div>

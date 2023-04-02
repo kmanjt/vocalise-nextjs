@@ -1,12 +1,9 @@
 import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/vocalise.png";
-import { AiFillApple } from "react-icons/ai";
-import { FaGooglePlay } from "react-icons/fa";
 
 const navigation = [
   { name: "Our Workshops", href: "#features", current: false },
@@ -79,13 +76,14 @@ export default function Nav() {
                       </a>
                     ))}
                   </div>
+                  
                 </div>
                 
                 
               </div>
               <div>
                   <button className="bg-vRed text-right font-bold text-white rounded-md p-2 m-auto">
-                    <Link href="#contact">
+                    <Link href="#contact" className="text-white">
                       Book a Workshop
                       </Link>
                   </button>

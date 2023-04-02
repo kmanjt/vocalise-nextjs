@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const feature = [
   {
     // Body Language
-    title: "Cummuncation Essentials",
+    title: "Communcation Essentials",
     description: "Focuses on mastering body language to enhance communication skills. Learn to interpret and convey nonverbal cues effectively,  fostering better connections with others.",
     image: image_1,
     // icon: RiNumber1,
@@ -56,12 +56,11 @@ export default function Features() {
             >
               <div
                 key={index}
-                className="rounded-lg bg-white text-center p-4 w-full h-full  shadow-lg"
+                className="rounded-xl bg-white text-center p-4 w-full sm:h-full  shadow-lg"
               >
 
                 {/* <Image src={feature.image} alt="image_unavailable" width={250} height={150} className="w-full h-auto"/> */}
-                <h6 className="font-medium text-black text-2xl max-sm:text-xs">{feature.title}</h6>
-                <br></br>
+                <h6 className="font-bold text-darkBlue text-2xl max-sm:text-xs">{feature.title}</h6>
                 <p className="text-center">
                   {feature.description}
                 </p>
