@@ -56,7 +56,7 @@ export default function Footer() {
             </a>
             <span className="font-bold"> & </span>{" "}
             <a
-              href="https://www.linkedin.com/in/kevin-james-tomescu/"
+              href="https://www.linkedin.com/in/teniola-malomo/"
               target={"_blank"}
               className="hover:text-red-500"
             >
